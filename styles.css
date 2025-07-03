@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   margin: 40px;
-  background: #f9f9f9;
-  color: #222;
+  background: #06ff65;
+  color: #4c00ff;
 }
 
 h1 {
@@ -17,10 +17,23 @@ section {
   border-radius: 12px;
 }
 
-.flex-container {
+.flex-container-row {
   /* Flexbox: arrange children in a row, allow wrapping */
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background: #e3f2fd;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.flex-container-column {
+  /* Flexbox: arrange children in a row, allow wrapping */
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 16px;
@@ -54,5 +67,19 @@ section {
   border-radius: 6px;
   min-width: 60px;
   min-height: 60px;
+}
+
+.box-solid {
+  /* Common box styling */
+  background: yellow;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  min-width: 100px;
+  min-height: 80px;
 }
 
