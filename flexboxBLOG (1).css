@@ -1,0 +1,22 @@
+.heading{
+ display: flex;
+
+ padding: 0px;
+ border-radius: 0px;
+ place-content: center;
+ border: 5px solid#ec2222;
+}
+
+.content{
+ font-family: 'Times New Roman', Times, serif;
+ font-size: medium;
+}
+
+.content h1 strong{
+    font-size:large;
+    color: blue;
+}
+
+.container2{
+ font-size: medium;
+}

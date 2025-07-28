@@ -1,0 +1,30 @@
+
+
+/* Reduce spacing between h1 elements */
+h1 {
+    margin: 0 0; /* Reduced top and bottom margin */
+    padding: 0; /* Remove any padding */
+}
+
+.heading{
+    display: flex;
+   
+    padding: 0px;
+    border-radius: 0px;
+    place-content: center;
+    border: 5px solid#ec2222;
+   }
+   
+.content{
+font-family: 'Times New Roman', Times, serif;
+font-size: medium;
+}
+
+.content h1 strong{
+    font-size:large;
+    color: blue;
+}
+
+.container2{
+font-size: medium;
+}
