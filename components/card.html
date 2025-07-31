@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Styles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* CUTE CARD */
+        .cute-card {
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(255, 234, 167, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cute-card::before {
+            content: '🌸 🌸 🌸';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            opacity: 0.6;
+        }
+
+        .cute-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 234, 167, 0.4);
+        }
+
+        .cute-card h3 {
+            color: #e17055;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .cute-card p {
+            color: #2d3436;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .cute-card .price {
+            font-size: 28px;
+            color: #e17055;
+            font-weight: bold;
+        }
+
+        /* MODERN CARD */
+        .modern-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #f1f5f9;
+        }
+
+        .modern-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .modern-card h3 {
+            color: #1e293b;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .modern-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .modern-card .price {
+            font-size: 24px;
+            color: #3b82f6;
+            font-weight: 600;
+        }
+
+        /* KIDS CARD */
+        .kids-card {
+            background: linear-gradient(45deg, #74b9ff, #a29bfe);
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(116, 185, 255, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            border: 5px solid #fdcb6e;
+        }
+
+        .kids-card::after {
+            content: '🎈 🎪 🎨';
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+            font-size: 24px;
+        }
+
+        .kids-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(116, 185, 255, 0.4);
+        }
+
+        .kids-card h3 {
+            color: white;
+            font-size: 26px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .kids-card p {
+            color: white;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .kids-card .price {
+            font-size: 30px;
+            color: #fdcb6e;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* FINANCE CARD */
+        .finance-card {
+            background: linear-gradient(135deg, #2d3436, #636e72);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(45, 52, 54, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            border: 2px solid #00b894;
+        }
+
+        .finance-card::before {
+            content: '💰 💳 📈';
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 20px;
+        }
+
+        .finance-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(45, 52, 54, 0.4);
+        }
+
+        .finance-card h3 {
+            color: #00b894;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .finance-card p {
+            color: #dfe6e9;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .finance-card .price {
+            font-size: 32px;
+            color: #00b894;
+            font-weight: bold;
+        }
+
+        /* GAMING CARD */
+        .gaming-card {
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(44, 62, 80, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            border: 3px solid #e74c3c;
+        }
+
+        .gaming-card::after {
+            content: '🎮 🕹️ 🏆';
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+            font-size: 22px;
+        }
+
+        .gaming-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(44, 62, 80, 0.5);
+        }
+
+        .gaming-card h3 {
+            color: #e74c3c;
+            font-size: 26px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .gaming-card p {
+            color: #ecf0f1;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .gaming-card .price {
+            font-size: 28px;
+            color: #f39c12;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Card Styles</h2>
+            <div class="card-grid">
+                <!-- Cute Card -->
+                <div class="cute-card">
+                    <h3>Sweet Treats</h3>
+                    <p>Delicious cupcakes and pastries made with love and the finest ingredients. Perfect for any celebration!</p>
+                    <div class="price">$12.99</div>
+                </div>
+
+                <!-- Modern Card -->
+                <div class="modern-card">
+                    <h3>Premium Service</h3>
+                    <p>Professional and reliable service with cutting-edge technology and exceptional customer support.</p>
+                    <div class="price">$49.99</div>
+                </div>
+
+                <!-- Kids Card -->
+                <div class="kids-card">
+                    <h3>Fun Adventure</h3>
+                    <p>Join us for an exciting journey filled with games, learning, and lots of fun activities!</p>
+                    <div class="price">$8.99</div>
+                </div>
+
+                <!-- Finance Card -->
+                <div class="finance-card">
+                    <h3>Investment Plan</h3>
+                    <p>Secure your future with our comprehensive investment portfolio and expert financial guidance.</p>
+                    <div class="price">$299.99</div>
+                </div>
+
+                <!-- Gaming Card -->
+                <div class="gaming-card">
+                    <h3>Epic Quest</h3>
+                    <p>Embark on an epic gaming adventure with stunning graphics and immersive gameplay experience.</p>
+                    <div class="price">$59.99</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
