@@ -46,7 +46,7 @@ section {
 .grid-container {
   /* Grid: 3 columns, auto rows */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin-top: 16px;
   margin-bottom: 16px;
