@@ -1,42 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Button Styles</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            background: white;
             padding: 40px 20px;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section {
-            margin-bottom: 60px;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .section h2 {
-            margin-bottom: 30px;
-            text-align: center;
-            font-size: 28px;
-            color: #333;
-        }
 
         .button-grid {
             display: grid;
@@ -57,22 +31,13 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(255, 154, 158, 0.4);
-            position: relative;
             overflow: hidden;
+
         }
 
         .cute-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(255, 154, 158, 0.6);
-        }
-
-        .cute-btn::before {
-            content: '🌸';
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 18px;
         }
 
         /* MODERN STYLE */
@@ -109,7 +74,6 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 6px 0 #4ecdc4;
-            position: relative;
         }
 
         .kids-btn:hover {
@@ -117,14 +81,6 @@
             box-shadow: 0 2px 0 #4ecdc4;
         }
 
-        .kids-btn::after {
-            content: '🎈';
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 20px;
-        }
 
         /* FINANCE STYLE */
         .finance-btn {
@@ -138,7 +94,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-            position: relative;
+
         }
 
         .finance-btn:hover {
@@ -146,14 +102,6 @@
             box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
         }
 
-        .finance-btn::before {
-            content: '💰';
-            position: absolute;
-            left: 8px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 16px;
-        }
 
         /* GAMING STYLE */
         .gaming-btn {
@@ -168,48 +116,27 @@
             transition: all 0.3s ease;
             text-transform: uppercase;
             letter-spacing: 1px;
-            box-shadow: 0 6px 0 #2c3e50, 0 8px 20px rgba(255, 107, 53, 0.3);
-            position: relative;
+            box-shadow: 0 6px 0 #2c3e50;
         }
 
         .gaming-btn:hover {
             transform: translateY(2px);
-            box-shadow: 0 2px 0 #2c3e50, 0 4px 15px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 2px 0 #2c3e50;
         }
 
-        .gaming-btn::after {
-            content: '🎮';
-            position: absolute;
-            right: 8px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 18px;
-        }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .button-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .section {
-                padding: 20px;
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="section">
-            <h2>Button Styles</h2>
-            <div class="button-grid">
-                <button class="cute-btn">Click Me!</button>
-                <button class="modern-btn">Modern Button</button>
-                <button class="kids-btn">Fun Button</button>
-                <button class="finance-btn">Invest Now</button>
-                <button class="gaming-btn">Play Game</button>
-            </div>
+
+        <h2>Button Styles</h2>
+        <div class="button-grid">
+            <button class="cute-btn">Click Me</button>
+            <button class="modern-btn">Modern Button</button>
+            <button class="kids-btn">Fun Button</button>
+            <button class="finance-btn">Invest Now</button>
+            <button class="gaming-btn">Play Game</button>
         </div>
-    </div>
+
 </body>
 </html>
