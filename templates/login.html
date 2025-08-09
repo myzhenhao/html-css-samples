@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple Arcade - Login</title>
+  <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="index.html"><span class="logo-dot"></span> Purple Arcade</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="articles-fps.html">FPS</a>
+        <a href="articles-rpg.html">RPG</a>
+        <a href="articles-puzzle.html">Puzzle</a>
+        <a href="discussion.html">Discussion</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-links">
+        <a class="btn btn-outline" href="register.html">Register</a>
+        <a class="btn btn-primary active" href="login.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container" style="max-width: 520px;">
+      <h1 class="section-title">Welcome back</h1>
+      <form class="form" action="#" method="post">
+        <div>
+          <label class="label" for="email">Email</label>
+          <input class="input" id="email" type="email" placeholder="you@arcade.gg" required>
+        </div>
+        <div>
+          <label class="label" for="password">Password</label>
+          <input class="input" id="password" type="password" placeholder="••••••••" required>
+        </div>
+        <div style="display:flex; justify-content: space-between; align-items:center; gap: 10px;">
+          <label class="subtle" style="display:flex; align-items:center; gap:8px;">
+            <input type="checkbox"> Remember me
+          </label>
+          <a class="btn-ghost" href="#">Forgot password?</a>
+        </div>
+        <button class="btn btn-primary" type="submit">Login</button>
+      </form>
+      <p class="subtle" style="margin-top:14px;">New here? <a href="register.html">Create an account</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Purple Arcade</span>
+      <span class="subtle">Play nice. Stay neon.</span>
+    </div>
+  </footer>
+</body>
+</html> 

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>my card style</title>
+    
+    <style>
+          *{ 
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+             }
+
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135edg, #0d32d6 0%,#6b27af 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container{
+            max-width: 1400px;
+            margin:0 auto;
+        }
+
+        .section{
+            margin-bottom: 60px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow:0 25px 50px #111111
+        }
+
+        .section h2{
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .card-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+            gap:30px;
+        }
+
+     /*CUTE CARD*/
+        .cute-card{
+            background: linear-gradient(0deg,#ffeea7,#fab1a0);
+            border-radius: 20px;
+            padding: 12px 24px;
+            box-shadow: 0 10px 30px  #636262;
+            transition: all 1s ease;
+            position:relative;
+            overflow:hidden;
+        }
+
+        .cute-card:hover{
+            transform: translateY(-10px);
+            box-shadow: 0  10px  20px #636262;
+        }
+
+        .cute-card h3{
+            color: #d60dd6;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .cute-card-p{
+            color: #3b5df7;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .cute-card.price{
+            font-size: 28px;
+            color: #f3af49;
+            font-weight: bold;
+        }
+
+    /*MODERN CARD*/
+        .modern-card{
+            background: linear-gradient(0edg,#ffeea7,#fab1a0);
+            border-radius: 20px;
+            padding: 12px 24px;
+            box-shadow: 0 10px 30px  #636262;
+            transition: all 0.3s ease;
+            border: 1px solid rgb(204, 200, 200);
+        }
+
+
+        .modern-card:hover{
+            transform: translateY(-10px);
+            box-shadow: 0  8px  20px #636262;
+        }
+
+        .modern-card h3{
+            color: #0d32d6;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .cute-card-p{
+            color: #3b5df7;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .modern-card.price{
+            font-size: 28px;
+            color: #ae0eee;
+            font-weight: 600;
+        }
+
+ /*KID-CARD*/
+        .kid-card{
+            background: linear-gradient(135edg,#ffeea7,#fab1a0);
+            border-radius: 20px;
+            padding: 12px 24px;
+            box-shadow: 0 10px 30px  #636262;
+            position:relative;
+            overflow:hidden;
+        }
+        .kid-card::after{
+            content:🃏 𖤐⊹₊ 🎪⋆;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 20px;
+            opacity: 0.6;
+        }
+
+        .kid-card:hover{
+            transform: translateY(-10px);
+            box-shadow: 0  10px  20px #636262;
+        }
+
+        .kid-card-h3{
+            color: #d60dd6;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .kid-card-p{
+            color: #3b5df7;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .kid-card.price{
+            font-size: 28px;
+            color: #f3af49;
+            font-weight: bold;
+        }
+
+    /*Finance card*/
+        .Finance-card{
+            background: linear-gradient(135edg,#ffeea7,#fab1a0);
+            border-radius: 20px;
+            padding: 12px 24px;
+            box-shadow: 0 10px 30px  #636262;
+            transition: all 0.3s ease;
+            position:relative;
+            border:2px solid #315ff5;
+        }
+
+        .Finance-card::before{
+            content:💰💳;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 20px;
+            
+        }
+
+        .Finance-card:hover{
+            transform: translateY(-10px);
+            box-shadow: 0  10px  20px #636262;
+        }
+
+        .Finance-card h3{
+            color: #362ae4;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .Finance-card-p{
+            color: #3b5df7;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .Finance-card.price{
+            font-size: 28px;
+            color: #f1f51f;
+            font-weight: bold;
+        }
+
+      /*GAMING CARD*/
+        .gaming-card{
+            background: linear-gradient(135edg,#ffeea7,#fab1a0);
+            border-radius: 20px;
+            padding: 12px 24px;
+            box-shadow: 0 10px 30px  #636262;
+            transition: all 0.3s ease;
+            position:relative;
+            border:2px solid #315ff5;
+        }
+
+        .gaming-card::before{
+            content:˙✧˖°🎮 ⋆｡˚;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 20px;
+            
+        }
+
+        .gaming-card:hover{
+            transform: translateY(-10px);
+            box-shadow: 0  10px  20px #120161;
+        }
+
+        .gaming-card h3{
+            color: #362ae4;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .gaming-card-p{
+            color: #3b5df7;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .gaming-card.price{
+            font-size: 28px;
+            color: #f5c31f;
+            font-weight: bold;
+        }
+
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Card Styles</h2>
+            <div class="card-grid">
+         <!--Cute Card-->
+             <div class="cute-card">
+                <h3>Sweet Treats</h3>
+                <p>Delicious cupcakes</p>
+                <div class="price">$69.99</div>
+             </div> 
+
+         <!--MODERN CARD-->
+             <div class="modern-card">
+                <h3>Premium service </h3>
+                <p>professional and reliable service with AI tool</p>
+                <div class="price">$59.99</div>
+             </div>
+
+          <!--KID-CARD-->
+              <div class="kid-card">
+                <h3>Fun Adventure</h3>
+                <p>professional and reliable service with AI tool</p>
+                <div class="price">$79.99</div>
+             </div>
+          
+          <!--Finance card-->
+              <div class="Finance-card">
+                <h3>Fun Adventure</h3>
+                <p>professional and reliable service with AI tool</p>
+                <div class="price">$79.99</div>
+             </div>
+            
+           <!--GAMING CARD--> 
+              <div class="gaming-card">
+                <h3>Fun Adventure</h3>
+                <p>professional and reliable service with AI tool</p>
+                <div class="price">$79.99</div>
+             </div>
+            
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

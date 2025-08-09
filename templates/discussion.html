@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple Arcade - Discussion</title>
+  <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="index.html"><span class="logo-dot"></span> Purple Arcade</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="articles-fps.html">FPS</a>
+        <a href="articles-rpg.html">RPG</a>
+        <a href="articles-puzzle.html">Puzzle</a>
+        <a class="active" href="discussion.html">Discussion</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-links">
+        <a class="btn btn-outline" href="register.html">Register</a>
+        <a class="btn btn-primary" href="login.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Threads</h1>
+
+      <div class="card">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Topic</th>
+              <th>Category</th>
+              <th>Replies</th>
+              <th>Last Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">Best FPS Sensitivity Settings?</a></td>
+              <td><span class="badge">FPS</span></td>
+              <td>23</td>
+              <td>2h ago</td>
+            </tr>
+            <tr>
+              <td><a href="#">RPG: Choice that surprised you</a></td>
+              <td><span class="badge ok">RPG</span></td>
+              <td>11</td>
+              <td>1d ago</td>
+            </tr>
+            <tr>
+              <td><a href="#">Puzzle hint etiquette?</a></td>
+              <td><span class="badge warn">Puzzle</span></td>
+              <td>8</td>
+              <td>5d ago</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="section-title">Start a New Thread</h2>
+      <form class="form" action="#" method="post">
+        <div class="form-row">
+          <div>
+            <label class="label" for="topic">Topic</label>
+            <input class="input" id="topic" type="text" placeholder="What do you want to discuss?" required>
+          </div>
+          <div>
+            <label class="label" for="category">Category</label>
+            <select class="select" id="category">
+              <option>FPS</option>
+              <option>RPG</option>
+              <option>Puzzle</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="label" for="body">Details</label>
+          <textarea class="textarea" id="body" placeholder="Share your thoughts..." required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Post Thread</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Purple Arcade</span>
+      <span class="subtle">Play nice. Stay neon.</span>
+    </div>
+  </footer>
+</body>
+</html> 

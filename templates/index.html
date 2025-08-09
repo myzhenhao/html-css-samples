@@ -3,47 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox vs Grid Demo</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Purple Arcade - Gaming Blog</title>
+  <link rel="stylesheet" href="./game.css">
 </head>
 <body>
-  <h1>CSS Flexbox vs Grid: Visual Explanation</h1>
-
-  <section>
-    <h2>Flexbox Example Row Format</h2>
-    <p>Flexbox arranges items in a row or column, distributing space and aligning items dynamically. Try resizing the window to see how items wrap.</p>
-    <div class="flex-container-row">
-      <div class="box">1</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
-      <div class="box">4</div>
-      <div class="box">5</div>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="index.html"><span class="logo-dot"></span> Purple Arcade</a>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="articles-fps.html">FPS</a>
+        <a href="articles-rpg.html">RPG</a>
+        <a href="articles-puzzle.html">Puzzle</a>
+        <a href="discussion.html">Discussion</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-links">
+        <a class="btn btn-outline" href="register.html">Register</a>
+        <a class="btn btn-primary" href="login.html">Login</a>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <section>
-    <h2>Flexbox Example Column Format</h2>
-    <p>Flexbox arranges items in a row or column, distributing space and aligning items dynamically. Try resizing the window to see how items wrap.</p>
-    <div class="flex-container-column">
-      <div class="box-solid">1</div>
-      <div class="box-solid">2</div>
-      <div class="box-solid">3</div>
-      <div class="box-solid">4</div>
-      <div class="box-solid">5</div>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="tag">Neon-Purple Gaming Vibes</div>
+          <h1>Level Up Your Gaming Reads</h1>
+          <p>Fresh takes, meta breakdowns, and pixel-perfect reviews. Dive into FPS aim labs, epic RPG journeys, and brain-twisting puzzles — all bathed in a purple glow.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#latest">Browse Latest</a>
+            <a class="btn btn-outline" href="discussion.html">Join Discussion</a>
+          </div>
+        </div>
+        <div class="hero-art"></div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Grid Example</h2>
-    <p>Grid arranges items in rows and columns, allowing for more complex layouts. Items are placed into grid cells.</p>
-    <div class="grid-container">
-      <div class="box">A</div>
-      <div class="box">B</div>
-      <div class="box">C</div>
-      <div class="box">D</div>
-      <div class="box">E</div>
-      <div class="box">F</div>
+    <section class="section" id="latest">
+      <div class="container">
+        <h2 class="section-title">Latest Picks</h2>
+        <div class="card-grid">
+          <a class="card" href="articles-fps.html">
+            <span class="tag cyan">FPS</span>
+            <h3>Top Aim Routines in 2025</h3>
+            <p>Drills, sens guides, and crosshair science to tighten your spray.</p>
+          </a>
+          <a class="card" href="articles-rpg.html">
+            <span class="tag">RPG</span>
+            <h3>Best Questlines You Might Have Missed</h3>
+            <p>Story-rich arcs with rewarding builds and choices that matter.</p>
+          </a>
+          <a class="card" href="articles-puzzle.html">
+            <span class="tag pink">Puzzle</span>
+            <h3>Brain Benders for the Weekend</h3>
+            <p>Short, satisfying challenges that scratch the logic itch.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Stay in the Loop</h2>
+        <form class="form" action="#" method="post">
+          <label class="label" for="email">Email</label>
+          <input class="input" id="email" type="email" placeholder="you@arcade.gg" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Purple Arcade</span>
+      <span class="subtle">Play nice. Stay neon.</span>
     </div>
-  </section>
+  </footer>
 </body>
 </html> 
